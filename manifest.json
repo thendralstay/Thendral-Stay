@@ -1,0 +1,10 @@
+{
+  "name": "Thendral Stay Guest Register",
+  "short_name": "Thendral Stay",
+  "description": "Indian guest registration for Thendral Stay",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f8f6",
+  "theme_color": "#123b35",
+  "icons": []
+}
