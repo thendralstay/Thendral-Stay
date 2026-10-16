@@ -1,0 +1,22 @@
+
+name: Build Thendral Stay APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build APK
+        run: |
+          mkdir -p app/src/main/assets
+          cp index.html app/src/main/assets/index.html
+          cp manifest.json app/src/main/assets/manifest.json
+          cp sw.js app/src/main/assets/sw.js
+          mkdir -p app/src/main/java/com/thendralstay/app
+          echo "Files copied"
+          
